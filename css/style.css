@@ -52,23 +52,48 @@ header, nav, .jumbotron {
     margin-bottom: 25px;
 }
 
+.light {
+    filter: brightness(80%);
+}
+
 .jumbotron {
     height: 550px;
     background: url(/img/banner.jpg) no-repeat 50%;
     background-size: cover;
-    filter: brightness(80%);
     border-radius: 10px;
+    position: relative;
+}
+
+.text-jumbo {
+    width: 490px;
+    filter: brightness(100%);
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
+
+.jumbotron p {
+    font-size: 14px;
 }
 
 main {
-    background: blue;
     width: 100%;
 }
 
 .main-header {
-    background: steelblue;
     height: 80px;
     width: 100%;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.main-header p {
+    font-weight: 300;
+    color: #ccc;
 }
 
 .row {
@@ -77,22 +102,53 @@ main {
 
 .sidebar {
     float: left;
-    background: steelblue;
     width: 23%;
     height: 495px;
 }
 
+.sidebar h3, .content h3 {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .content p {
+    color: #ccc;
+}
+.first {
+    background: url("/img/img-1.jpg") no-repeat;
+}
+
+.middle {
+    background: url("/img/banner-2.jpg") no-repeat 50% 50%;
+}
+
+.last {
+    background: url("/img/img-3.jpg") no-repeat 50% 50%
+}
+
+.bg-img {
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .content {
     float: left;
-    background: steelblue;
     width: 50%;
-    height: 495px;
     margin: 0 25px;
 }
 
 footer {
     height: 70px;
     width: 100%;
-    background: purple;
     margin-top: 10px;
+    text-align: center;
+}
+
+#heart {
+    color: red;
+    font-size: 30px;
 }
